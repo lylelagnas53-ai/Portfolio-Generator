@@ -1,0 +1,427 @@
+.portfolio-page {
+    --ink: #28243d;
+    --muted: #77738d;
+    --brand: #7657e8;
+    --brand-dark: #5b3fc4;
+    --brand-soft: #f0edff;
+    --line: #e9e6f2;
+    --page: #faf9fe;
+    min-height: 100vh;
+    background: #f8f7fc;
+}
+
+.preview-nav {
+    min-height: 68px;
+    padding-right: max(5vw, 20px);
+    padding-left: max(5vw, 20px);
+}
+
+.portfolio-canvas {
+    width: min(1020px, calc(100% - 40px));
+    margin: 39px auto 23px;
+    overflow: hidden;
+    border: 1px solid #eae6f2;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 19px 58px #35255812;
+}
+
+.profile-image,
+.profile-initial {
+    display: block;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-initial {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(145deg, #c9b9fa, #7a5de0);
+    color: #fff;
+    font-size: 41px;
+    font-weight: 700;
+}
+
+.simple-canvas {
+    max-width: 850px;
+    padding: 0 62px 45px;
+}
+
+.simple-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 51px 0 32px;
+    border-bottom: 1px solid #eeebf4;
+    text-align: center;
+}
+
+.simple-profile .profile-image,
+.simple-profile .profile-initial {
+    margin-bottom: 19px;
+}
+
+.simple-profile .eyebrow {
+    margin: 0 0 6px;
+}
+
+.simple-profile h1 {
+    margin: 0;
+    font-size: clamp(32px, 5vw, 47px);
+    font-weight: 740;
+    letter-spacing: -2px;
+    line-height: 1.2;
+}
+
+.simple-intro {
+    max-width: 620px;
+    margin: 12px 0 15px;
+    color: #6e697e;
+    font-size: 14px;
+    white-space: pre-line;
+}
+
+.contact-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 14px;
+    color: #78738a;
+    font-size: 11px;
+}
+
+.contact-line a {
+    color: var(--brand-dark);
+}
+
+.simple-sections {
+    padding-top: 7px;
+}
+
+.portfolio-section-card {
+    min-width: 0;
+}
+
+.simple-section {
+    padding: 22px 0;
+    border-bottom: 1px solid #efedf4;
+}
+
+.portfolio-section-kicker {
+    margin: 0 0 3px;
+    color: #9a83df;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.portfolio-section-card h2 {
+    margin: 0 0 8px;
+    color: #203c2b;
+    font-size: 17px;
+    font-weight: 750;
+}
+
+.portfolio-section-content {
+    margin: 0;
+    color: #6c687a;
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+    white-space: pre-line;
+}
+
+.portfolio-empty-note {
+    padding: 22px 0;
+    color: #89849b;
+    font-size: 12px;
+    text-align: center;
+}
+
+.preview-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px 35px;
+}
+
+.preview-actions .button {
+    min-height: 40px;
+    padding: 9px 14px;
+    font-size: 11px;
+}
+
+.modern-canvas {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    max-width: 1020px;
+    min-height: 660px;
+}
+
+.modern-sidebar {
+    padding: 43px 29px;
+    background: linear-gradient(165deg, #f0edff, #e6e0fb);
+}
+
+.modern-sidebar .profile-image,
+.modern-sidebar .profile-initial {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 24px;
+    border: 4px solid #fff;
+    box-shadow: 0 9px 25px #4b39841c;
+}
+
+.modern-sidebar .eyebrow {
+    margin-bottom: 7px;
+}
+
+.modern-sidebar h1 {
+    margin: 0;
+    color: #30294a;
+    font-size: 29px;
+    font-weight: 760;
+    letter-spacing: -1.2px;
+    line-height: 1.15;
+}
+
+.modern-role {
+    margin: 8px 0 27px;
+    color: #79728c;
+    font-size: 12px;
+}
+
+.modern-contact,
+.modern-skills {
+    margin-top: 21px;
+    padding-top: 19px;
+    border-top: 1px solid #d8d0ef;
+}
+
+.modern-contact h2,
+.modern-skills h2 {
+    margin: 0 0 10px;
+    color: #46405d;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.modern-contact p,
+.modern-contact a,
+.modern-skills p {
+    display: block;
+    margin: 7px 0;
+    color: #706984;
+    font-size: 11px;
+    overflow-wrap: anywhere;
+    white-space: pre-line;
+}
+
+.modern-contact a {
+    color: #5f4cc0;
+}
+
+.modern-main {
+    padding: 42px 39px;
+}
+
+.modern-welcome {
+    margin-bottom: 17px;
+    padding: 21px 22px;
+    border: 1px solid #ebe7f4;
+    border-radius: 14px;
+    background: #fcfbff;
+}
+
+.modern-welcome .eyebrow {
+    margin-bottom: 6px;
+}
+
+.modern-welcome > p:last-child {
+    margin: 0;
+    color: #656075;
+    font-size: 13px;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+.modern-section {
+    margin-top: 13px;
+    padding: 17px 18px;
+    border: 1px solid #efedf4;
+    border-radius: 13px;
+    background: #fff;
+}
+
+.modern-section .portfolio-section-kicker {
+    color: #9a83df;
+}
+
+.modern-section h2 {
+    font-size: 15px;
+}
+
+.modern-section .portfolio-section-content {
+    font-size: 12px;
+}
+
+.creative-canvas {
+    position: relative;
+    max-width: 1020px;
+    overflow: hidden;
+    border: 0;
+    background: #fffaf6;
+}
+
+.creative-profile {
+    position: relative;
+    display: grid;
+    min-height: 340px;
+    grid-template-columns: 1fr 150px;
+    align-items: center;
+    gap: 30px;
+    overflow: hidden;
+    padding: 53px 65px;
+    background: linear-gradient(112deg, #fff3eb 0%, #fff8f1 58%, #f8eeff 100%);
+}
+
+.creative-identity {
+    position: relative;
+    z-index: 1;
+}
+
+.creative-profile .eyebrow {
+    color: #a95054;
+}
+
+.creative-profile h1 {
+    max-width: 620px;
+    margin: 0;
+    color: #392b3c;
+    font-size: clamp(43px, 7vw, 79px);
+    font-weight: 820;
+    letter-spacing: -5px;
+    line-height: 0.98;
+    overflow-wrap: anywhere;
+}
+
+.creative-profile h1 span {
+    color: #db704f;
+}
+
+.creative-intro {
+    max-width: 520px;
+    margin: 20px 0 17px;
+    color: #76616b;
+    font-size: 14px;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+.creative-email {
+    display: inline-block;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #d28c76;
+    color: #a34e58;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.creative-profile .profile-image,
+.creative-portrait-fallback {
+    position: relative;
+    z-index: 1;
+    width: 142px;
+    height: 172px;
+    border: 5px solid #fff;
+    border-radius: 70px 70px 36px 36px;
+    box-shadow: 0 13px 30px #6f3b3b20;
+    object-fit: cover;
+    transform: rotate(4deg);
+}
+
+.creative-portrait-fallback {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(150deg, #efb79c, #ca8cb0);
+    color: #fff;
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.creative-spark {
+    position: absolute;
+    color: #e59c61;
+    font-size: 44px;
+}
+
+.creative-spark-one {
+    top: 35px;
+    right: 28%;
+}
+
+.creative-spark-two {
+    right: 10%;
+    bottom: 25px;
+    color: #af88c5;
+    font-size: 34px;
+}
+
+.creative-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 25px;
+    padding: 14px 65px;
+    border-bottom: 1px solid #f0e5df;
+    color: #806f76;
+    font-size: 11px;
+}
+
+.creative-sections {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px;
+    padding: 29px 42px 38px;
+}
+
+.creative-section {
+    position: relative;
+    min-height: 150px;
+    padding: 21px;
+    border: 1px solid #f0e5df;
+    border-radius: 9px 22px 9px 22px;
+    background: #fff;
+}
+
+.creative-section:nth-child(3n + 2) {
+    border-color: #eee5f2;
+    background: #fcf9ff;
+}
+
+.creative-section:nth-child(3n) {
+    border-color: #f2e7ce;
+    background: #fffdf7;
+}
+
+.creative-section .portfolio-section-kicker {
+    color: #c07857;
+}
+
+.creative-section h2 {
+    color: #513744;
+    font-size: 15px;
+}
+
+.creative-section .portfolio-section-content {
+    color: #75636d;
+    font-size: 12px;
+}
+
+.creative-sections .portfolio-empty-note {
+    grid-column: 1 / -1;
+}

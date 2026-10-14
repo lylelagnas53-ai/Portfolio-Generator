@@ -1,0 +1,298 @@
+@media (max-width: 850px) {
+    .home-hero {
+        gap: 28px;
+        padding-right: 6vw;
+        padding-left: 6vw;
+    }
+
+    .hero-card {
+        max-width: 330px;
+    }
+
+    .portfolio-row {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .portfolio-row-actions {
+        justify-content: flex-start;
+    }
+
+    .modern-canvas {
+        grid-template-columns: 245px minmax(0, 1fr);
+    }
+
+    .modern-sidebar {
+        padding: 35px 23px;
+    }
+
+    .modern-main {
+        padding: 32px 24px;
+    }
+
+    .template-legacy .template-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 650px) {
+    .site-header {
+        min-height: 68px;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 17px;
+    }
+
+    .brand-mark {
+        width: 37px;
+        height: 37px;
+        border-radius: 12px;
+    }
+
+    .brand-name {
+        font-size: 12px;
+    }
+
+    .brand-subtitle {
+        font-size: 8px;
+    }
+
+    .site-nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 12px;
+        font-size: 11px;
+    }
+
+    .site-nav .button {
+        min-height: 34px;
+        padding: 7px 10px;
+    }
+
+    .home-hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        padding: 68px 23px 56px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(41px, 12vw, 59px);
+        letter-spacing: -2.7px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-card {
+        width: min(88%, 330px);
+        margin-top: 10px;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .content-width,
+    .template-page {
+        width: min(100% - 28px, 540px);
+    }
+
+    .form-page,
+    .manage-page,
+    .template-page {
+        padding-top: 38px;
+        padding-bottom: 55px;
+    }
+
+    .page-heading h1 {
+        font-size: 36px;
+    }
+
+    .portfolio-form {
+        padding: 23px 18px;
+    }
+
+    .field-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .field-wide {
+        grid-column: auto;
+    }
+
+    .form-actions {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .form-actions .button {
+        width: 100%;
+    }
+
+    .manage-heading {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .manage-heading > .button {
+        align-self: flex-start;
+    }
+
+    .portfolio-row {
+        padding: 16px;
+    }
+
+    .portfolio-row-actions {
+        width: 100%;
+        gap: 7px;
+    }
+
+    .template-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .template-mockup {
+        height: 175px;
+    }
+
+    .template-actions {
+        align-items: stretch;
+        flex-direction: column-reverse;
+    }
+
+    .portfolio-canvas {
+        width: calc(100% - 24px);
+        margin-top: 17px;
+        border-radius: 16px;
+    }
+
+    .simple-canvas {
+        padding: 0 20px 25px;
+    }
+
+    .simple-profile {
+        padding-top: 34px;
+    }
+
+    .simple-profile h1 {
+        font-size: 32px;
+        letter-spacing: -1.5px;
+    }
+
+    .simple-intro {
+        font-size: 12px;
+    }
+
+    .modern-canvas {
+        grid-template-columns: 1fr;
+    }
+
+    .modern-sidebar {
+        padding: 27px 23px;
+    }
+
+    .modern-sidebar .profile-image,
+    .modern-sidebar .profile-initial {
+        width: 82px;
+        height: 82px;
+        margin-bottom: 16px;
+    }
+
+    .modern-sidebar h1 {
+        font-size: 25px;
+    }
+
+    .modern-contact,
+    .modern-skills {
+        margin-top: 15px;
+        padding-top: 14px;
+    }
+
+    .modern-main {
+        padding: 19px;
+    }
+
+    .creative-profile {
+        min-height: auto;
+        grid-template-columns: 1fr 84px;
+        gap: 12px;
+        padding: 37px 22px 29px;
+    }
+
+    .creative-profile h1 {
+        font-size: clamp(37px, 10vw, 54px);
+        letter-spacing: -2.5px;
+    }
+
+    .creative-profile .profile-image,
+    .creative-portrait-fallback {
+        width: 82px;
+        height: 111px;
+        border-width: 3px;
+    }
+
+    .creative-portrait-fallback {
+        font-size: 37px;
+    }
+
+    .creative-intro {
+        margin-top: 13px;
+        font-size: 12px;
+    }
+
+    .creative-spark-one {
+        top: 14px;
+        right: 28%;
+        font-size: 30px;
+    }
+
+    .creative-contact {
+        gap: 5px 13px;
+        padding: 12px 22px;
+        font-size: 9px;
+    }
+
+    .creative-sections {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+}
+
+@media print {
+    body,
+    .portfolio-page {
+        background: #fff !important;
+    }
+
+    .site-header,
+    .preview-actions {
+        display: none !important;
+    }
+
+    .portfolio-canvas {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .simple-canvas {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .modern-sidebar,
+    .creative-profile,
+    .creative-section {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}
