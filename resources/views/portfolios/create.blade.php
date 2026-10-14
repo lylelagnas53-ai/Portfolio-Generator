@@ -9,7 +9,7 @@
 <body class="app-page">
     <header class="site-header">
         <a href="{{ route('home', [], false) }}" class="brand">
-            <span class="brand-mark" aria-hidden="true">S2-G1</span>
+            <span class="brand-mark" aria-hidden="true">P</span>
             <span class="brand-copy"><span class="brand-name">PORTIVAGEN</span><span class="brand-subtitle">PORTFOLIO BUILDER</span></span>
         </a>
         <nav class="site-nav" aria-label="Main navigation">
