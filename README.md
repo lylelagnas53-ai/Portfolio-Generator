@@ -56,3 +56,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Render deployment
+
+The Docker container applies pending database migrations with `php artisan migrate --force` before Apache starts. Configure the Render service with its `APP_KEY` and database connection environment variables; the first successful startup creates the portfolio table, and subsequent startups apply only new migrations.
