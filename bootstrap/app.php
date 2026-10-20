@@ -12,7 +12,13 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        $middleware->trustProxies(at: '*');
+        $middleware->redirectGuestsTo(
+            fn (Request $request): string => route('login', [], false),
+        );
+        $middleware->redirectUsersTo(
+            fn (Request $request): string => route('home', [], false),
+        );
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->shouldRenderJsonWhen(
