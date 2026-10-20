@@ -112,6 +112,23 @@ input {
     color: var(--brand-dark);
 }
 
+.site-nav form {
+    margin: 0;
+}
+
+.site-nav form button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+}
+
+.site-nav form button:hover {
+    color: var(--brand-dark);
+}
+
 .text-link {
     color: #607568;
     font-size: 13px;

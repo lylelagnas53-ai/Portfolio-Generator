@@ -2,7 +2,9 @@
 
 namespace Tests\Feature;
 
+use App\Models\User;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
@@ -11,6 +13,8 @@ use Tests\TestCase;
 
 class PortfolioWorkflowTest extends TestCase
 {
+    use RefreshDatabase;
+
     protected function setUp(): void
     {
         parent::setUp();
@@ -35,6 +39,8 @@ class PortfolioWorkflowTest extends TestCase
 
     public function test_a_portfolio_can_be_saved_selected_and_previewed_in_all_templates(): void
     {
+        $this->actingAs(User::factory()->create());
+
         $this->get('/')
             ->assertOk()
             ->assertSee('<link rel="stylesheet" href="/css/app.css">', false)
@@ -98,6 +104,8 @@ class PortfolioWorkflowTest extends TestCase
 
     public function test_a_portfolio_can_be_updated_and_deleted(): void
     {
+        $this->actingAs(User::factory()->create());
+
         $this->post(route('portfolios.store'), [
             'full_name' => 'Jordan Rivera',
             'email' => 'jordan@example.test',
@@ -135,6 +143,8 @@ class PortfolioWorkflowTest extends TestCase
 
     public function test_portfolio_creation_validates_required_identity_fields(): void
     {
+        $this->actingAs(User::factory()->create());
+
         $this->from(route('portfolios.create'))
             ->post(route('portfolios.store'), [
                 'full_name' => '',
@@ -148,6 +158,7 @@ class PortfolioWorkflowTest extends TestCase
 
     public function test_profile_pictures_are_publicly_stored_replaced_and_removed_with_the_record(): void
     {
+        $this->actingAs(User::factory()->create());
         Storage::fake('public');
         $imageContents = base64_decode(
             'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/iYkAAAAASUVORK5CYII=',
